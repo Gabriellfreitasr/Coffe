@@ -1,0 +1,97 @@
+:root {
+    --main-color: #d3ad7f;
+    --black: #13131a;
+    --white: #fff;
+    --bg: #010103;
+    --border: 0.1rem solid rgba(255, 255, 255, 0.3);
+    font-size: 10px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.2s linear;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    background-color: var(--bg);
+}
+
+/* Menu */
+
+section {
+    padding: 3rem 2rem;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    border-bottom: var(--border);
+}
+
+.header section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+section .header__navbar  a {
+    margin: 0 1rem;
+    font-size: 1.8rem;
+    color: var(--white);
+}
+
+section .header__navbar a:hover {
+    color: var(--main-color);
+    border-bottom: 0.1rem solid var(--main-color);
+    font-size: 1.9rem;
+    padding-bottom: 0.5rem;
+}
+
+section .header__icons img {
+    margin: 1rem;
+    cursor: pointer;
+}
+
+section .header__icons img:hover{
+    width: 35px;
+    height: 35px;
+}
+
+/* Home */
+
+.home__container {
+    background: url("./assets/home-img.jpg");
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+section .content {
+    max-width: 60rem;
+}
+
+section .content h3 {
+    color: var(--white);
+}
+
+section .section__btn {
+    background: var(--main-color);
+    color: var(--white);
+    padding: 1rem 3rem;
+    font-size: 1.7rem;
+    cursor: pointer;
+    margin-top: 1rem;
+}
