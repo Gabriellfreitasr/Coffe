@@ -13,7 +13,6 @@
     outline: none;
     border: none;
     text-decoration: none;
-    text-transform: capitalize;
     transition: 0.2s linear;
     font-family: "Roboto", sans-serif;
 }
@@ -27,7 +26,7 @@ body {
 section {
     padding: 3rem 2rem;
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 80%;
 }
 
 .header {
@@ -67,8 +66,8 @@ section .header__icons img {
 }
 
 section .header__icons img:hover{
-    width: 35px;
-    height: 35px;
+    width: 28px;
+    height: 28px;
 }
 
 /* Home */
@@ -86,7 +85,7 @@ section .header__icons img:hover{
 }
 
 .content {
-    max-width: 60rem;
+    max-width: 60rem; 
 }
 
 .content h3 {
@@ -110,11 +109,13 @@ section .header__icons img:hover{
     cursor: pointer;
     margin-top: 1rem;
     display: inline-block;
+    border: 1px solid var(--white);
 }
 
 .btn:hover {
     letter-spacing: 0.1rem;
 }
+
 /* About */
 
 .title {
@@ -134,8 +135,13 @@ section .header__icons img:hover{
 .about .row {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     background-color: var(--black);
     gap: 1.5rem;
+}
+
+.about .row .container__img img{
+    width: 90vh;
 }
 
 .about .row .content {
@@ -148,7 +154,7 @@ section .header__icons img:hover{
 }
 
 .about .row .content p {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     color: var(--white);
     padding: 1rem 0;
     line-height: 1.8;
@@ -192,7 +198,7 @@ section .header__icons img:hover{
 }
 
 .menu .box__container .box:hover{
-    background-color: var(--white);
+    background-color: #ffffffd7;
 }
 
 .menu .box__container .box:hover>*{
@@ -256,3 +262,4 @@ section .header__icons img:hover{
 .footer .share img:hover {
     background-color: var(--main-color);
 }
+
